@@ -33,6 +33,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.View_H
         public void onClick(View view)
         {
             Intent intent=new Intent(activity,Level_Activity.class);
+            intent.putExtra("level",holder.getAdapterPosition());
             activity.startActivity(intent);
         }
     });
