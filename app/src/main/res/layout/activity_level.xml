@@ -4,7 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Level_Activity">
+    tools:context=".Level_Activity"
+    android:orientation="vertical">
+   <SeekBar
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_marginTop="20dp"
+       android:id="@+id/seekbar"
+       android:max="10"
+       android:background="@color/black"/>
    <androidx.recyclerview.widget.RecyclerView
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
